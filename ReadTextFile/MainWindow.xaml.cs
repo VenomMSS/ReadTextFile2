@@ -35,7 +35,7 @@ namespace ReadTextFile
         {
             filedialog = new OpenFileDialog();
             filedialog.FileOk += ReadTextFile;
-            filedialog.Title = "Opening Text File";
+            filedialog.Title = "Opening the Text File";
             filedialog.Filter = "Text Files(*.txt)|*.txt|All Files(*.*)|*.*";
             filedialog.ShowDialog();
         }
@@ -53,7 +53,7 @@ namespace ReadTextFile
             while (line != null)
             {
                 length = line.Length;
-                listBox.Items.Add("no of chars " + length);
+                listBox.Items.Add("no of characters " + length);
                 listBox.Items.Add( line);
                 line = reader.ReadLine();
             }
